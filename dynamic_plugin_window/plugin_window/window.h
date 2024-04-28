@@ -3,8 +3,8 @@
 #define PluginWindow_h
 #include <juce_gui_basics/juce_gui_basics.h>
 
-namespace viator_core {
-    class PluginWindow
+namespace viator {
+    class DynamicPluginWindow
     {
     public:
 
