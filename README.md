@@ -23,7 +23,7 @@ To integrate `DynamicPluginWindow` into your JUCE-based audio plugin project:
 To use `DynamicPluginWindow` in your plugin:
 
 1. Include the `DynamicPluginWindow` class in your plugin editor (only if you're doing a header-only approach instead of bringing in as a Juce submodule).
-2. Call `DynamicPluginWindow::setPluginWindowSize` from your editor's constructor or whenever you need to resize the plugin window. For example:
+2. Call `DynamicPluginWindow::setPluginWindowSize` from your editor's constructor or whenever you need to resize the plugin window. This replaces the **_setSize()_** call that in in the constructor by default. For example:
 
    ```cpp
    #include "DynamicPluginWindow.h"
