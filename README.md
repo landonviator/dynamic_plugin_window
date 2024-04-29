@@ -22,7 +22,7 @@ To integrate `DynamicPluginWindow` into your JUCE-based audio plugin project:
 ## Usage
 To use `DynamicPluginWindow` in your plugin:
 
-1. Include the `DynamicPluginWindow` class in your plugin editor (only if you're doing a header-only approach inside of bringing in as a Juce submodule).
+1. Include the `DynamicPluginWindow` class in your plugin editor (only if you're doing a header-only approach instead of bringing in as a Juce submodule).
 2. Call `DynamicPluginWindow::setPluginWindowSize` from your editor's constructor or whenever you need to resize the plugin window. For example:
 
    ```cpp
@@ -31,7 +31,7 @@ To use `DynamicPluginWindow` in your plugin:
    MyPluginEditor::MyPluginEditor()
    {
        double aspect_ratio = 16.0 / 9.0; // Desired aspect ratio
-       DynamicPluginWindow::setPluginWindowSize(*this, aspect_ratio);
+       viator::DynamicPluginWindow::setPluginWindowSize(*this, aspect_ratio);
    }
    ```
 
