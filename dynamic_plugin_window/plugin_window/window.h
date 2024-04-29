@@ -1,7 +1,6 @@
 #pragma once
-#ifndef PluginWindow_h
-#define PluginWindow_h
-#include <juce_gui_basics/juce_gui_basics.h>
+#ifndef window_h
+#define window_h
 
 namespace viator {
     class DynamicPluginWindow
