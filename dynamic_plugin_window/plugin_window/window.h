@@ -46,10 +46,10 @@ namespace viator {
         {
             // Define the upper and lower bounds of the
             // screen heights and corresponding multipliers
-            constexpr float min_height = 700.0f;
-            constexpr const float max_height = 3840.0f;
-            constexpr const float min_multiplier = 0.6f;
-            constexpr const float max_multiplier = 0.15f;
+            constexpr float min_height = 1.0f;
+            constexpr const float max_height = 2160.0f;
+            constexpr const float min_multiplier = 0.9f;
+            constexpr const float max_multiplier = 0.2f;
 
             // Clamp the screen height to be within bounds
             screenHeight = std::max(min_height, std::min(screenHeight, max_height));
